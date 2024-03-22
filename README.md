@@ -36,7 +36,7 @@ def is_fibonacci(num):
     fib_2 = 1
     
     while fib_2 < num:
-        [fib_1, fib_2] = [fib_2, fib_1 + fib_2]
+        fib_1, fib_2 = [fib_2, fib_1 + fib_2]
         
     return fib_2 == num
     
