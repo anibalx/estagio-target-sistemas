@@ -50,7 +50,8 @@ def verifica_fibonacci(num=0):
     else:
         print("Não faz parte da sequência Fibonacci")
 
-verifica_fibonacci(8)
+
+print(verifica_fibonacci(8))
 ```
 
 
