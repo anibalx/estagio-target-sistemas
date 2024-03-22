@@ -31,27 +31,26 @@ IMPORTANTE:
 
 Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
 ```
-def is_fibbonacci(num)
+def is_fibonacci(num):
     fib_1 = 0
     fib_2 = 1
-
-    while fib_2 < num
-      [fib_1, fib_2] = [fib_2, fib_1 + fib_2]
-    end
-
+    
+    while fib_2 < num:
+        [fib_1, fib_2] = [fib_2, fib_1 + fib_2]
+        
     return fib_2 == num
     
 
-def verifica_fibonacci(num=0):
+def verifica_fibonacci(num):
     if num == 0:
-        print("Faz parte da sequência Fibonacci")
-    elif is_fibbonacci(num):
-        print("Faz parte da sequência Fibonacci")
+        return "Faz parte da sequência Fibonacci"
+    elif is_fibonacci(num):
+        return "Faz parte da sequência Fibonacci"
     else:
-        print("Não faz parte da sequência Fibonacci")
+        return "Não faz parte da sequência Fibonacci"
 
 
-print(verifica_fibonacci(8))
+print(f"{verifica_fibonacci(8)}")
 ```
 
 
