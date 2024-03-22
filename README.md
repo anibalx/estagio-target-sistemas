@@ -42,9 +42,7 @@ def is_fibonacci(num):
     
 
 def verifica_fibonacci(num):
-    if num == 0:
-        return "Faz parte da sequência Fibonacci"
-    elif is_fibonacci(num):
+    if num == 0 or is_fibonacci(num):
         return "Faz parte da sequência Fibonacci"
     else:
         return "Não faz parte da sequência Fibonacci"
