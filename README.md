@@ -97,5 +97,6 @@ b) Evite usar funções prontas, como, por exemplo, reverse;
 def reverse(texto):
     return texto[::-1]
 
-reverse("Olá, mundo!")
+
+print(reverse("Olá, mundo!"))
 ```
